@@ -274,8 +274,8 @@
               </OCR_RVCT3>
               <OCR_RVCT4>
                 <Type>1</Type>
-                <StartAddress>0x8003000</StartAddress>
-                <Size>0xd000</Size>
+                <StartAddress>0x8003800</StartAddress>
+                <Size>0xc800</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
                 <Type>1</Type>
@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/STM32F1xx_HAL_Driver/Inc;../Middlewares/Third_Party/FatFs/src;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;..\Core</IncludePath>
+              <IncludePath>../Inc;  ../Drivers/STM32F1xx_HAL_Driver/Inc;  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include;  ../Drivers/CMSIS/Include;  ..\Core</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -398,16 +398,6 @@
               <FilePath>../Src/main.c</FilePath>
             </File>
             <File>
-              <FileName>user_diskio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Src/user_diskio.c</FilePath>
-            </File>
-            <File>
-              <FileName>fatfs.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Src/fatfs.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f1xx_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/stm32f1xx_it.c</FilePath>
@@ -426,6 +416,16 @@
               <FileName>stm32f1xx_hal_gpio_ex.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f1xx_hal_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f1xx_hal_tim_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c</FilePath>
             </File>
             <File>
               <FileName>stm32f1xx_hal.c</FileName>
@@ -477,21 +477,6 @@
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c</FilePath>
             </File>
-            <File>
-              <FileName>stm32f1xx_hal_spi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f1xx_hal_tim.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f1xx_hal_tim_ex.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -501,31 +486,6 @@
               <FileName>system_stm32f1xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/system_stm32f1xx.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Middlewares/FatFs</GroupName>
-          <Files>
-            <File>
-              <FileName>diskio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/Third_Party/FatFs/src/diskio.c</FilePath>
-            </File>
-            <File>
-              <FileName>ff.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/Third_Party/FatFs/src/ff.c</FilePath>
-            </File>
-            <File>
-              <FileName>ff_gen_drv.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/Third_Party/FatFs/src/ff_gen_drv.c</FilePath>
-            </File>
-            <File>
-              <FileName>syscall.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Middlewares/Third_Party/FatFs/src/option/syscall.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -543,14 +503,9 @@
               <FilePath>..\Core\gpio.c</FilePath>
             </File>
             <File>
-              <FileName>user_diskio_spi.c</FileName>
+              <FileName>timer.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Core\user_diskio_spi.c</FilePath>
-            </File>
-            <File>
-              <FileName>msd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\msd.c</FilePath>
+              <FilePath>..\Core\timer.c</FilePath>
             </File>
           </Files>
         </Group>
